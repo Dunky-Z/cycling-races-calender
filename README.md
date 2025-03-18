@@ -9,6 +9,24 @@
 - 多日赛事会显示每个赛段
 - 生成标准 ICS 格式日历文件
 
+## 订阅方式
+
+### 双语版本（中英文）
+
+```txt
+https://cdn.jsdelivr.net/gh/Dunky-Z/cycling-races-calender/cycling_races_bilingual.ics
+```
+![](https://picbed-1311007548.cos.ap-shanghai.myqcloud.com/markdown_picbed/img//2025/03/18/4a562d1f43c5a26a085adbe2b62b9cca.png)
+
+### 英文版本
+
+```txt
+https://cdn.jsdelivr.net/gh/Dunky-Z/cycling-races-calender/cycling_races.ics
+```
+
+![](https://picbed-1311007548.cos.ap-shanghai.myqcloud.com/markdown_picbed/img//2025/03/18/2117ecc36be5c31f681f68487d05f35a.png)
+
+
 ## 使用方法
 
 ### 安装依赖
