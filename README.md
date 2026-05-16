@@ -37,20 +37,39 @@ pip install requests beautifulsoup4 ics httpx fake-useragent
 
 ### 运行程序
 
-生成双语版本（默认）：
+生成当前赛季双语版本（默认）：
 ```bash
-python cycling-ics.py
+python cycling-races-ics.py
+```
+
+指定赛季年度（例如 2025）：
+```bash
+python cycling-races-ics.py --year 2025
 ```
 
 生成纯英文版本：
 ```bash
-python cycling-ics.py --lang en
+python cycling-races-ics.py --lang en
 ```
+
+同时指定年度与语言：
+```bash
+python cycling-races-ics.py --year 2025 --lang en
+```
+
+### 命令行参数
+
+| 参数 | 说明 | 默认值 |
+|------|------|--------|
+| `--year` | UCI 世界巡回赛赛季年度 | 当前年份 |
+| `--lang` | 赛事名称语言：`bilingual`（中英文）或 `en`（仅英文） | `bilingual` |
 
 ### 输出文件
 
-- 双语版本：`cycling_races_bilingual.ics`
-- 英文版本：`cycling_races_en.ics`
+输出文件名包含赛季年度，例如：
+
+- 双语版本：`cycling_races_bilingual_2025.ics`
+- 英文版本：`cycling_races_en_2025.ics`
 
 ## 日历导入方法
 

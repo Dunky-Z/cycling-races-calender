@@ -10,11 +10,13 @@ import argparse
 import re
 import time
 
-# Add argument parser for language option
 parser = argparse.ArgumentParser(description='Generate cycling race calendar')
+parser.add_argument('--year', type=int, default=datetime.now().year,
+                   help='Season year for the UCI calendar (default: current year)')
 parser.add_argument('--lang', choices=['en', 'bilingual'], default='bilingual',
                    help='Language for race names (en: English only, bilingual: English + Chinese)')
 args = parser.parse_args()
+year = args.year
 
 # Load race name translations
 try:
@@ -149,9 +151,10 @@ def is_race_finished(end_date):
     return end_date < datetime.now().date()
 
 # Step 1: Fetch the main calendar webpage
-url = "https://www.procyclingstats.com/races.php?year=2025&circuit=1&class=&filter=Filter&p=uci&s=year-calendar"
+url = f"https://www.procyclingstats.com/races.php?year={year}&circuit=1&class=&filter=Filter&p=uci&s=year-calendar"
 headers = {"User-Agent": UserAgent().random}
 
+print(f"Fetching {year} UCI calendar...")
 print("Fetching main calendar page...")
 with httpx.Client(follow_redirects=True) as client:
     response = client.get(url, headers=headers, timeout=10)
@@ -176,13 +179,13 @@ if table_div:
             # Parse start and end dates
             if ' - ' in date_range:
                 start_date_str, end_date_str = date_range.split(' - ')
-                start_date = datetime.strptime(start_date_str, '%d.%m').replace(year=2025)
-                end_date = datetime.strptime(end_date_str, '%d.%m').replace(year=2025)
+                start_date = datetime.strptime(start_date_str, '%d.%m').replace(year=year)
+                end_date = datetime.strptime(end_date_str, '%d.%m').replace(year=year)
                 # Handle year transition
                 if end_date < start_date:
-                    end_date = end_date.replace(year=2026)
+                    end_date = end_date.replace(year=year + 1)
             else:
-                start_date = datetime.strptime(date_range, '%d.%m').replace(year=2025)
+                start_date = datetime.strptime(date_range, '%d.%m').replace(year=year)
                 end_date = start_date
             
             # Skip races that have already finished
@@ -286,8 +289,8 @@ for i, race in enumerate(races):
 
 print("\nCreated calendar")
 
-# Modify the output filename based on language
-output_filename = 'cycling_races_bilingual.ics' if args.lang == 'bilingual' else 'cycling_races_en.ics'
+lang_suffix = 'bilingual' if args.lang == 'bilingual' else 'en'
+output_filename = f'cycling_races_{lang_suffix}_{year}.ics'
 
 # Step 4: Save the calendar to an ICS file
 with open(output_filename, 'w', encoding='utf-8') as f:
