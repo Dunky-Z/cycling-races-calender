@@ -57,12 +57,18 @@ python cycling-races-ics.py --lang en
 python cycling-races-ics.py --year 2025 --lang en
 ```
 
+导出该年度全部赛事（含已结束）：
+```bash
+python cycling-races-ics.py --year 2025 --all-races
+```
+
 ### 命令行参数
 
 | 参数 | 说明 | 默认值 |
 |------|------|--------|
 | `--year` | UCI 世界巡回赛赛季年度 | 当前年份 |
 | `--lang` | 赛事名称语言：`bilingual`（中英文）或 `en`（仅英文） | `bilingual` |
+| `--all-races` | 包含已结束赛事；默认仅导出尚未结束的赛事 | 否 |
 
 ### 输出文件
 
