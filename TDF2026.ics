@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:cycling-ics TDF2026 generator
+PRODID:cycling-ics TDF generator
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260719
 DESCRIPTION:尚帕尼奥勒 - 索莱松高原 | 山地(183.9KM) | 当地开赛：13:20(CEST) | 预计完赛：17:18(CEST) | 观骑世界/中国体育直播：19:00-0:25(北京时间) | 解说：李陶、云苏华 | 首个HC级山顶终点，索莱松高原11.3km@9%，萨莱夫山前置爬坡同样凶险。
@@ -26,16 +26,16 @@ SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 14
 UID:17052c83-80be-4c8e-bc8c-97d2e459e570
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260721
+DESCRIPTION:埃维昂莱班 - 托农莱班 | 个人计时赛(ITT)(26.1KM) | 当地开赛：13:00(CEST) | 预计完赛：17:50(CEST) | 观骑世界/中国体育直播：18:50-0:20(北京时间) | 解说：云苏华、萧深 | 沿日内瓦湖26.1km计时赛，含缓坡、技术性下坡与急弯，GC格局关键转折点。
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 16 (ITT)
+UID:6f3ebee9-6b5e-489e-af4d-b5b50c83075ae
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260708
 DESCRIPTION:拉内默藏 - 波城 | 平路(158.3KM) | 当地开赛：14:05(CEST) | 预计完赛：17:37(CEST) | 观骑世界/中国体育直播：19:55-0:15(北京时间) | 解说：李陶、计成 | 今年首个平路冲刺赛段，冲刺积分最高70分，波城是环法到访次数最多的非巴黎城市。
 SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 5
 UID:f1c5b731-6c91-42f5-972e-47a920c18714
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260721
-DESCRIPTION:埃维昂莱班 - 托农莱班 | 个人计时赛(ITT)(26.1KM) | 当地开赛：13:00(CEST) | 预计完赛：17:50(CEST) | 观骑世界/中国体育直播：18:50-0:20(北京时间) | 解说：云苏华、萧深 | 沿日内瓦湖26.1km计时赛，含缓坡、技术性下坡与急弯，GC格局关键转折点。
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 16 (ITT)
-UID:6f3ebee9-6b5e-489e-af4d-5b50c83075ae
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260709

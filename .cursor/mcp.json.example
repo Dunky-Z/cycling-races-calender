@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "procyclingstats": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/lewis-mcgillion/procyclingstats-mcp-server.git",
+        "procyclingstats-mcp"
+      ]
+    }
+  }
+}

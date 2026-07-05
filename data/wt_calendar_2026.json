@@ -1,0 +1,2394 @@
+{
+  "year": 2026,
+  "tiers": [
+    "worldtour"
+  ],
+  "races": [
+    {
+      "url": "race/amstel-gold-race/2026",
+      "name": "Amstel Gold Race",
+      "year": 2026,
+      "nationality": "NL",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-04-19",
+      "enddate": "2026-04-19",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/amstel-gold-race/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/amstel-gold-race/2026/result",
+          "stage_name": "Maastricht → Berg en Terblijt",
+          "date": "2026-04-19",
+          "departure": "Maastricht",
+          "arrival": "Berg en Terblijt",
+          "stage_type": "RR",
+          "distance": 257.2
+        }
+      ]
+    },
+    {
+      "url": "race/bretagne-classic/2026",
+      "name": "Bretagne Classic - CIC",
+      "year": 2026,
+      "nationality": "FR",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-08-30",
+      "enddate": "2026-08-30",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/bretagne-classic/2026",
+      "stage_details": []
+    },
+    {
+      "url": "race/classic-brugge-de-panne/2026",
+      "name": "Ronde Van Brugge - Tour of Bruges ME",
+      "year": 2026,
+      "nationality": "BE",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-03-25",
+      "enddate": "2026-03-25",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/classic-brugge-de-panne/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/classic-brugge-de-panne/2026/result",
+          "stage_name": "Bruges → Bruges",
+          "date": "2026-03-25",
+          "departure": "Bruges",
+          "arrival": "Bruges",
+          "stage_type": "RR",
+          "distance": 202.9
+        }
+      ]
+    },
+    {
+      "url": "race/copenhagen-sprint/2026",
+      "name": "Copenhagen Sprint",
+      "year": 2026,
+      "nationality": "DK",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-06-14",
+      "enddate": "2026-06-14",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/copenhagen-sprint/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/copenhagen-sprint/2026/result",
+          "stage_name": "Roskilde → Copenhagen",
+          "date": "2026-06-14",
+          "departure": "Roskilde",
+          "arrival": "Copenhagen",
+          "stage_type": "RR",
+          "distance": 228.2
+        }
+      ]
+    },
+    {
+      "url": "race/cyclassics-hamburg/2026",
+      "name": "Cyclassics Hamburg",
+      "year": 2026,
+      "nationality": "DE",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-08-16",
+      "enddate": "2026-08-16",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/cyclassics-hamburg/2026",
+      "stage_details": []
+    },
+    {
+      "url": "race/dauphine/2026",
+      "name": "Tour Auvergne - Rhône-Alpes",
+      "year": 2026,
+      "nationality": "FR",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-06-07",
+      "enddate": "2026-06-14",
+      "stages": [
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-1",
+          "date": "06-07",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-2",
+          "date": "06-08",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-3",
+          "date": "06-09",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-4",
+          "date": "06-10",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-5",
+          "date": "06-11",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-6",
+          "date": "06-12",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-7",
+          "date": "06-13",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-8",
+          "date": "06-14",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/dauphine/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-1",
+          "stage_name": "Vizille → Saint-Ismier",
+          "date": "2026-06-07",
+          "departure": "Vizille",
+          "arrival": "Saint-Ismier",
+          "stage_type": "RR",
+          "distance": 146.2
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-2",
+          "stage_name": "Saint-Martin-le-Vinoux → Le Puy-en-Velay",
+          "date": "2026-06-08",
+          "departure": "Saint-Martin-le-Vinoux",
+          "arrival": "Le Puy-en-Velay",
+          "stage_type": "RR",
+          "distance": 234.3
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-3",
+          "stage_name": "Perreux → Perreux",
+          "date": "2026-06-09",
+          "departure": "Perreux",
+          "arrival": "Perreux",
+          "stage_type": "TTT",
+          "distance": 28.4
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-4",
+          "stage_name": "Le Puy-en-Velay → Montrond-les-Bains",
+          "date": "2026-06-10",
+          "departure": "Le Puy-en-Velay",
+          "arrival": "Montrond-les-Bains",
+          "stage_type": "RR",
+          "distance": 167.4
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-5",
+          "stage_name": "Saint-Chamond → Parc des Oiseaux Villars-les-Dombes",
+          "date": "2026-06-11",
+          "departure": "Saint-Chamond",
+          "arrival": "Parc des Oiseaux Villars-les-Dombes",
+          "stage_type": "RR",
+          "distance": 195.8
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-7",
+          "stage_name": "La Bridoire → Grand Colombier",
+          "date": "2026-06-13",
+          "departure": "La Bridoire",
+          "arrival": "Grand Colombier",
+          "stage_type": "RR",
+          "distance": 133.6
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-8",
+          "stage_name": "Beaufort → Plateau de Solaison - Brison",
+          "date": "2026-06-14",
+          "departure": "Beaufort",
+          "arrival": "Plateau de Solaison - Brison",
+          "stage_type": "RR",
+          "distance": 120.1
+        }
+      ]
+    },
+    {
+      "url": "race/dwars-door-vlaanderen/2026",
+      "name": "Dwars door Vlaanderen",
+      "year": 2026,
+      "nationality": "BE",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-04-01",
+      "enddate": "2026-04-01",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/dwars-door-vlaanderen/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/dwars-door-vlaanderen/2026/result",
+          "stage_name": "Roeselare → Waregem",
+          "date": "2026-04-01",
+          "departure": "Roeselare",
+          "arrival": "Waregem",
+          "stage_type": "RR",
+          "distance": 184.6
+        }
+      ]
+    },
+    {
+      "url": "race/e3-harelbeke/2026",
+      "name": "E3 Saxo Classic ME",
+      "year": 2026,
+      "nationality": "BE",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-03-27",
+      "enddate": "2026-03-27",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/e3-harelbeke/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/e3-harelbeke/2026/result",
+          "stage_name": "Harelbeke → Harelbeke",
+          "date": "2026-03-27",
+          "departure": "Harelbeke",
+          "arrival": "Harelbeke",
+          "stage_type": "RR",
+          "distance": 208.8
+        }
+      ]
+    },
+    {
+      "url": "race/eschborn-frankfurt/2026",
+      "name": "Eschborn-Frankfurt",
+      "year": 2026,
+      "nationality": "DE",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-05-01",
+      "enddate": "2026-05-01",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/eschborn-frankfurt/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/eschborn-frankfurt/2026/result",
+          "stage_name": "Eschborn → Frankfurt am Main",
+          "date": "2026-05-01",
+          "departure": "Eschborn",
+          "arrival": "Frankfurt am Main",
+          "stage_type": "RR",
+          "distance": 211.4
+        }
+      ]
+    },
+    {
+      "url": "race/gent-wevelgem/2026",
+      "name": "In Flanders Fields",
+      "year": 2026,
+      "nationality": "BE",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-03-29",
+      "enddate": "2026-03-29",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/gent-wevelgem/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/gent-wevelgem/2026/result",
+          "stage_name": "Middelkerke → Wevelgem",
+          "date": "2026-03-29",
+          "departure": "Middelkerke",
+          "arrival": "Wevelgem",
+          "stage_type": "RR",
+          "distance": 240.8
+        }
+      ]
+    },
+    {
+      "url": "race/giro-d-italia/2026",
+      "name": "Giro d'Italia",
+      "year": 2026,
+      "nationality": "IT",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-05-08",
+      "enddate": "2026-05-31",
+      "stages": [
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-1",
+          "date": "05-08",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-2",
+          "date": "05-09",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-3",
+          "date": "05-10",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-4",
+          "date": "05-12",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-5",
+          "date": "05-13",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-6",
+          "date": "05-14",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-7",
+          "date": "05-15",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-8",
+          "date": "05-16",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-9",
+          "date": "05-17",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-10",
+          "date": "05-19",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-11",
+          "date": "05-20",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-12",
+          "date": "05-21",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-13",
+          "date": "05-22",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-14",
+          "date": "05-23",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-15",
+          "date": "05-24",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-16",
+          "date": "05-26",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-17",
+          "date": "05-27",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-18",
+          "date": "05-28",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-19",
+          "date": "05-29",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-20",
+          "date": "05-30",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-21",
+          "date": "05-31",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/giro-d-italia/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-1",
+          "stage_name": "Nessebar → Burgas",
+          "date": "2026-05-08",
+          "departure": "Nessebar",
+          "arrival": "Burgas",
+          "stage_type": "RR",
+          "distance": 147.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-2",
+          "stage_name": "Burgas → Veliko Tarnovo",
+          "date": "2026-05-09",
+          "departure": "Burgas",
+          "arrival": "Veliko Tarnovo",
+          "stage_type": "RR",
+          "distance": 221.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-3",
+          "stage_name": "Plovdiv → Sofia",
+          "date": "2026-05-10",
+          "departure": "Plovdiv",
+          "arrival": "Sofia",
+          "stage_type": "RR",
+          "distance": 175.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-4",
+          "stage_name": "Catanzaro → Cosenza",
+          "date": "2026-05-12",
+          "departure": "Catanzaro",
+          "arrival": "Cosenza",
+          "stage_type": "RR",
+          "distance": 138.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-5",
+          "stage_name": "Praia a Mare → Potenza",
+          "date": "2026-05-13",
+          "departure": "Praia a Mare",
+          "arrival": "Potenza",
+          "stage_type": "RR",
+          "distance": 203.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-6",
+          "stage_name": "Paestum → Naples",
+          "date": "2026-05-14",
+          "departure": "Paestum",
+          "arrival": "Naples",
+          "stage_type": "RR",
+          "distance": 141.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-7",
+          "stage_name": "Formia → Blockhaus",
+          "date": "2026-05-15",
+          "departure": "Formia",
+          "arrival": "Blockhaus",
+          "stage_type": "RR",
+          "distance": 244.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-8",
+          "stage_name": "Chieti → Fermo",
+          "date": "2026-05-16",
+          "departure": "Chieti",
+          "arrival": "Fermo",
+          "stage_type": "RR",
+          "distance": 156.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-9",
+          "stage_name": "Cervia → Corno alle Scale",
+          "date": "2026-05-17",
+          "departure": "Cervia",
+          "arrival": "Corno alle Scale",
+          "stage_type": "RR",
+          "distance": 184.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-10",
+          "stage_name": "Viareggio → Massa",
+          "date": "2026-05-19",
+          "departure": "Viareggio",
+          "arrival": "Massa",
+          "stage_type": "ITT",
+          "distance": 42.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-11",
+          "stage_name": "Porcari (Paper District) → Chiavari",
+          "date": "2026-05-20",
+          "departure": "Porcari (Paper District)",
+          "arrival": "Chiavari",
+          "stage_type": "RR",
+          "distance": 195.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-12",
+          "stage_name": "Imperia → Novi Ligure",
+          "date": "2026-05-21",
+          "departure": "Imperia",
+          "arrival": "Novi Ligure",
+          "stage_type": "RR",
+          "distance": 175.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-13",
+          "stage_name": "Alessandria → Verbania",
+          "date": "2026-05-22",
+          "departure": "Alessandria",
+          "arrival": "Verbania",
+          "stage_type": "RR",
+          "distance": 189.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-14",
+          "stage_name": "Aosta → Pila (Gressan)",
+          "date": "2026-05-23",
+          "departure": "Aosta",
+          "arrival": "Pila (Gressan)",
+          "stage_type": "RR",
+          "distance": 133.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-15",
+          "stage_name": "Voghera → Milan",
+          "date": "2026-05-24",
+          "departure": "Voghera",
+          "arrival": "Milan",
+          "stage_type": "RR",
+          "distance": 156.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-16",
+          "stage_name": "Bellinzona → Carì",
+          "date": "2026-05-26",
+          "departure": "Bellinzona",
+          "arrival": "Carì",
+          "stage_type": "RR",
+          "distance": 113.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-17",
+          "stage_name": "Cassano d'Adda → Andalo",
+          "date": "2026-05-27",
+          "departure": "Cassano d'Adda",
+          "arrival": "Andalo",
+          "stage_type": "RR",
+          "distance": 202.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-18",
+          "stage_name": "Fai della Paganella → Pieve di Soligo",
+          "date": "2026-05-28",
+          "departure": "Fai della Paganella",
+          "arrival": "Pieve di Soligo",
+          "stage_type": "RR",
+          "distance": 171.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-19",
+          "stage_name": "Feltre → Alleghe (Piani di Pezzè)",
+          "date": "2026-05-29",
+          "departure": "Feltre",
+          "arrival": "Alleghe (Piani di Pezzè)",
+          "stage_type": "RR",
+          "distance": 151.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-20",
+          "stage_name": "Gemona del Friuli 1976-2026 → Piancavallo",
+          "date": "2026-05-30",
+          "departure": "Gemona del Friuli 1976-2026",
+          "arrival": "Piancavallo",
+          "stage_type": "RR",
+          "distance": 200.0
+        },
+        {
+          "stage_url": "race/giro-d-italia/2026/stage-21",
+          "stage_name": "Rome → Rome",
+          "date": "2026-05-31",
+          "departure": "Rome",
+          "arrival": "Rome",
+          "stage_type": "RR",
+          "distance": 131.0
+        }
+      ]
+    },
+    {
+      "url": "race/gp-montreal/2026",
+      "name": "Grand Prix Cycliste de Montréal",
+      "year": 2026,
+      "nationality": "CA",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-09-13",
+      "enddate": "2026-09-13",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/gp-montreal/2026",
+      "stage_details": []
+    },
+    {
+      "url": "race/gp-quebec/2026",
+      "name": "Grand Prix Cycliste de Québec",
+      "year": 2026,
+      "nationality": "CA",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-09-11",
+      "enddate": "2026-09-11",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/gp-quebec/2026",
+      "stage_details": []
+    },
+    {
+      "url": "race/great-ocean-road-race/2026",
+      "name": "Cadel Evans Great Ocean Road Race",
+      "year": 2026,
+      "nationality": "AU",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-02-01",
+      "enddate": "2026-02-01",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/great-ocean-road-race/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/great-ocean-road-race/2026/result",
+          "stage_name": "Geelong → Geelong",
+          "date": "2026-02-01",
+          "departure": "Geelong",
+          "arrival": "Geelong",
+          "stage_type": "RR",
+          "distance": 182.3
+        }
+      ]
+    },
+    {
+      "url": "race/il-lombardia/2026",
+      "name": "Il Lombardia",
+      "year": 2026,
+      "nationality": "IT",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-10-10",
+      "enddate": "2026-10-10",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/il-lombardia/2026",
+      "stage_details": []
+    },
+    {
+      "url": "race/itzulia-basque-country/2026",
+      "name": "Itzulia Basque Country",
+      "year": 2026,
+      "nationality": "ES",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-04-06",
+      "enddate": "2026-04-11",
+      "stages": [
+        {
+          "stage_url": "race/itzulia-basque-country/2026/stage-1",
+          "date": "04-06",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/itzulia-basque-country/2026/stage-2",
+          "date": "04-07",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/itzulia-basque-country/2026/stage-3",
+          "date": "04-08",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/itzulia-basque-country/2026/stage-4",
+          "date": "04-09",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/itzulia-basque-country/2026/stage-5",
+          "date": "04-10",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/itzulia-basque-country/2026/stage-6",
+          "date": "04-11",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/itzulia-basque-country/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/itzulia-basque-country/2026/stage-1",
+          "stage_name": "Bilbao → Bilbao",
+          "date": "2026-04-06",
+          "departure": "Bilbao",
+          "arrival": "Bilbao",
+          "stage_type": "ITT",
+          "distance": 13.8
+        },
+        {
+          "stage_url": "race/itzulia-basque-country/2026/stage-2",
+          "stage_name": "Pamplona-Iruña → Cuevas de Mendukilo",
+          "date": "2026-04-07",
+          "departure": "Pamplona-Iruña",
+          "arrival": "Cuevas de Mendukilo",
+          "stage_type": "RR",
+          "distance": 164.1
+        },
+        {
+          "stage_url": "race/itzulia-basque-country/2026/stage-3",
+          "stage_name": "Basauri → Basauri",
+          "date": "2026-04-08",
+          "departure": "Basauri",
+          "arrival": "Basauri",
+          "stage_type": "RR",
+          "distance": 152.8
+        },
+        {
+          "stage_url": "race/itzulia-basque-country/2026/stage-4",
+          "stage_name": "Galdakao → Galdakao",
+          "date": "2026-04-09",
+          "departure": "Galdakao",
+          "arrival": "Galdakao",
+          "stage_type": "RR",
+          "distance": 167.2
+        },
+        {
+          "stage_url": "race/itzulia-basque-country/2026/stage-5",
+          "stage_name": "Eibar → Eibar",
+          "date": "2026-04-10",
+          "departure": "Eibar",
+          "arrival": "Eibar",
+          "stage_type": "RR",
+          "distance": 176.2
+        },
+        {
+          "stage_url": "race/itzulia-basque-country/2026/stage-6",
+          "stage_name": "Goizper-Antzuola → Bergara",
+          "date": "2026-04-11",
+          "departure": "Goizper-Antzuola",
+          "arrival": "Bergara",
+          "stage_type": "RR",
+          "distance": 135.2
+        }
+      ]
+    },
+    {
+      "url": "race/la-fleche-wallone/2026",
+      "name": "La Flèche Wallonne",
+      "year": 2026,
+      "nationality": "BE",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-04-22",
+      "enddate": "2026-04-22",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/la-fleche-wallone/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/la-fleche-wallone/2026/result",
+          "stage_name": "Herstal → Mur de Huy",
+          "date": "2026-04-22",
+          "departure": "Herstal",
+          "arrival": "Mur de Huy",
+          "stage_type": "RR",
+          "distance": 200.0
+        }
+      ]
+    },
+    {
+      "url": "race/liege-bastogne-liege/2026",
+      "name": "Liège - Bastogne - Liège",
+      "year": 2026,
+      "nationality": "BE",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-04-26",
+      "enddate": "2026-04-26",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/liege-bastogne-liege/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/liege-bastogne-liege/2026/result",
+          "stage_name": "Liège → Liège",
+          "date": "2026-04-26",
+          "departure": "Liège",
+          "arrival": "Liège",
+          "stage_type": "RR",
+          "distance": 259.5
+        }
+      ]
+    },
+    {
+      "url": "race/milano-sanremo/2026",
+      "name": "Milano-Sanremo",
+      "year": 2026,
+      "nationality": "IT",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-03-21",
+      "enddate": "2026-03-21",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/milano-sanremo/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/milano-sanremo/2026/result",
+          "stage_name": "Pavia → Sanremo",
+          "date": "2026-03-21",
+          "departure": "Pavia",
+          "arrival": "Sanremo",
+          "stage_type": "RR",
+          "distance": 298.0
+        }
+      ]
+    },
+    {
+      "url": "race/omloop-het-nieuwsblad/2026",
+      "name": "Omloop Nieuwsblad ME",
+      "year": 2026,
+      "nationality": "BE",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-02-28",
+      "enddate": "2026-02-28",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/omloop-het-nieuwsblad/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/omloop-het-nieuwsblad/2026/result",
+          "stage_name": "Ghent → Ninove",
+          "date": "2026-02-28",
+          "departure": "Ghent",
+          "arrival": "Ninove",
+          "stage_type": "RR",
+          "distance": 207.2
+        }
+      ]
+    },
+    {
+      "url": "race/paris-nice/2026",
+      "name": "Paris-Nice",
+      "year": 2026,
+      "nationality": "FR",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-03-08",
+      "enddate": "2026-03-15",
+      "stages": [
+        {
+          "stage_url": "race/paris-nice/2026/stage-1",
+          "date": "03-08",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-2",
+          "date": "03-09",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-3",
+          "date": "03-10",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-4",
+          "date": "03-11",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-5",
+          "date": "03-12",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-6",
+          "date": "03-13",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-7",
+          "date": "03-14",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-8",
+          "date": "03-15",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/paris-nice/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/paris-nice/2026/stage-1",
+          "stage_name": "Achères → Carrières-sous-Poissy",
+          "date": "2026-03-08",
+          "departure": "Achères",
+          "arrival": "Carrières-sous-Poissy",
+          "stage_type": "RR",
+          "distance": 170.9
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-2",
+          "stage_name": "Épône → Montargis",
+          "date": "2026-03-09",
+          "departure": "Épône",
+          "arrival": "Montargis",
+          "stage_type": "RR",
+          "distance": 187.0
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-3",
+          "stage_name": "Cosne-Cours-sur-Loire → Pouilly-sur-Loire",
+          "date": "2026-03-10",
+          "departure": "Cosne-Cours-sur-Loire",
+          "arrival": "Pouilly-sur-Loire",
+          "stage_type": "TTT",
+          "distance": 23.5
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-4",
+          "stage_name": "Bourges → Uchon",
+          "date": "2026-03-11",
+          "departure": "Bourges",
+          "arrival": "Uchon",
+          "stage_type": "RR",
+          "distance": 195.0
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-5",
+          "stage_name": "Cormoranche-sur-Saône → Colombier-le-Vieux",
+          "date": "2026-03-12",
+          "departure": "Cormoranche-sur-Saône",
+          "arrival": "Colombier-le-Vieux",
+          "stage_type": "RR",
+          "distance": 206.3
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-6",
+          "stage_name": "Barbentane → Apt",
+          "date": "2026-03-13",
+          "departure": "Barbentane",
+          "arrival": "Apt",
+          "stage_type": "RR",
+          "distance": 179.3
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-7",
+          "stage_name": "Pont Louis Nucera → Isola",
+          "date": "2026-03-14",
+          "departure": "Pont Louis Nucera",
+          "arrival": "Isola",
+          "stage_type": "RR",
+          "distance": 47.0
+        },
+        {
+          "stage_url": "race/paris-nice/2026/stage-8",
+          "stage_name": "Nice → Nice",
+          "date": "2026-03-15",
+          "departure": "Nice",
+          "arrival": "Nice",
+          "stage_type": "RR",
+          "distance": 129.2
+        }
+      ]
+    },
+    {
+      "url": "race/paris-roubaix/2026",
+      "name": "Paris - Roubaix",
+      "year": 2026,
+      "nationality": "FR",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-04-12",
+      "enddate": "2026-04-12",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/paris-roubaix/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/paris-roubaix/2026/result",
+          "stage_name": "Compiègne → Roubaix",
+          "date": "2026-04-12",
+          "departure": "Compiègne",
+          "arrival": "Roubaix",
+          "stage_type": "RR",
+          "distance": 258.3
+        }
+      ]
+    },
+    {
+      "url": "race/renewi-tour/2026",
+      "name": "Renewi Tour",
+      "year": 2026,
+      "nationality": "BE",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-08-19",
+      "enddate": "2026-08-23",
+      "stages": [
+        {
+          "stage_url": "race/renewi-tour/2026/stage-1",
+          "date": "08-19",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/renewi-tour/2026/stage-2",
+          "date": "08-20",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/renewi-tour/2026/stage-3",
+          "date": "08-21",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/renewi-tour/2026/stage-4",
+          "date": "08-22",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/renewi-tour/2026/stage-5",
+          "date": "08-23",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/renewi-tour/2026",
+      "stage_details": []
+    },
+    {
+      "url": "race/ronde-van-vlaanderen/2026",
+      "name": "Ronde van Vlaanderen",
+      "year": 2026,
+      "nationality": "BE",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-04-05",
+      "enddate": "2026-04-05",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/ronde-van-vlaanderen/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/ronde-van-vlaanderen/2026/result",
+          "stage_name": "Antwerp → Oudenaarde",
+          "date": "2026-04-05",
+          "departure": "Antwerp",
+          "arrival": "Oudenaarde",
+          "stage_type": "RR",
+          "distance": 278.2
+        }
+      ]
+    },
+    {
+      "url": "race/san-sebastian/2026",
+      "name": "Donostia San Sebastian Klasikoa",
+      "year": 2026,
+      "nationality": "ES",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-08-01",
+      "enddate": "2026-08-01",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/san-sebastian/2026",
+      "stage_details": []
+    },
+    {
+      "url": "race/strade-bianche/2026",
+      "name": "Strade Bianche",
+      "year": 2026,
+      "nationality": "IT",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "1.UWT",
+      "startdate": "2026-03-07",
+      "enddate": "2026-03-07",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/strade-bianche/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/strade-bianche/2026/result",
+          "stage_name": "Siena → Siena",
+          "date": "2026-03-07",
+          "departure": "Siena",
+          "arrival": "Siena",
+          "stage_type": "RR",
+          "distance": 203.0
+        }
+      ]
+    },
+    {
+      "url": "race/tirreno-adriatico/2026",
+      "name": "Tirreno-Adriatico",
+      "year": 2026,
+      "nationality": "IT",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-03-09",
+      "enddate": "2026-03-15",
+      "stages": [
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-1",
+          "date": "03-09",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-2",
+          "date": "03-10",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-3",
+          "date": "03-11",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-4",
+          "date": "03-12",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-5",
+          "date": "03-13",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-6",
+          "date": "03-14",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-7",
+          "date": "03-15",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/tirreno-adriatico/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-1",
+          "stage_name": "Lido di Camaiore → Lido di Camaiore",
+          "date": "2026-03-09",
+          "departure": "Lido di Camaiore",
+          "arrival": "Lido di Camaiore",
+          "stage_type": "ITT",
+          "distance": 11.5
+        },
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-2",
+          "stage_name": "Camaiore → San Gimignano",
+          "date": "2026-03-10",
+          "departure": "Camaiore",
+          "arrival": "San Gimignano",
+          "stage_type": "RR",
+          "distance": 206.0
+        },
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-3",
+          "stage_name": "Cortona → Magliano de' Marsi",
+          "date": "2026-03-11",
+          "departure": "Cortona",
+          "arrival": "Magliano de' Marsi",
+          "stage_type": "RR",
+          "distance": 221.0
+        },
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-4",
+          "stage_name": "Tagliacozzo → Martinsicuro",
+          "date": "2026-03-12",
+          "departure": "Tagliacozzo",
+          "arrival": "Martinsicuro",
+          "stage_type": "RR",
+          "distance": 213.0
+        },
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-5",
+          "stage_name": "Marotta-Mondolfo → Mombaroccio",
+          "date": "2026-03-13",
+          "departure": "Marotta-Mondolfo",
+          "arrival": "Mombaroccio",
+          "stage_type": "RR",
+          "distance": 184.0
+        },
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-6",
+          "stage_name": "San Severino Marche → Camerino",
+          "date": "2026-03-14",
+          "departure": "San Severino Marche",
+          "arrival": "Camerino",
+          "stage_type": "RR",
+          "distance": 188.0
+        },
+        {
+          "stage_url": "race/tirreno-adriatico/2026/stage-7",
+          "stage_name": "Civitanova Marche → San Benedetto del Tronto",
+          "date": "2026-03-15",
+          "departure": "Civitanova Marche",
+          "arrival": "San Benedetto del Tronto",
+          "stage_type": "RR",
+          "distance": 142.0
+        }
+      ]
+    },
+    {
+      "url": "race/tour-auvergne-rhone-alpes/2026",
+      "name": "Tour Auvergne - Rhône-Alpes",
+      "year": 2026,
+      "nationality": "FR",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-06-07",
+      "enddate": "2026-06-14",
+      "stages": [
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-1",
+          "date": "06-07",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-2",
+          "date": "06-08",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-3",
+          "date": "06-09",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-4",
+          "date": "06-10",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-5",
+          "date": "06-11",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-6",
+          "date": "06-12",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-7",
+          "date": "06-13",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-8",
+          "date": "06-14",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/tour-auvergne-rhone-alpes/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-1",
+          "stage_name": "Vizille → Saint-Ismier",
+          "date": "2026-06-07",
+          "departure": "Vizille",
+          "arrival": "Saint-Ismier",
+          "stage_type": "RR",
+          "distance": 146.2
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-2",
+          "stage_name": "Saint-Martin-le-Vinoux → Le Puy-en-Velay",
+          "date": "2026-06-08",
+          "departure": "Saint-Martin-le-Vinoux",
+          "arrival": "Le Puy-en-Velay",
+          "stage_type": "RR",
+          "distance": 234.3
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-3",
+          "stage_name": "Perreux → Perreux",
+          "date": "2026-06-09",
+          "departure": "Perreux",
+          "arrival": "Perreux",
+          "stage_type": "TTT",
+          "distance": 28.4
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-4",
+          "stage_name": "Le Puy-en-Velay → Montrond-les-Bains",
+          "date": "2026-06-10",
+          "departure": "Le Puy-en-Velay",
+          "arrival": "Montrond-les-Bains",
+          "stage_type": "RR",
+          "distance": 167.4
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-5",
+          "stage_name": "Saint-Chamond → Parc des Oiseaux Villars-les-Dombes",
+          "date": "2026-06-11",
+          "departure": "Saint-Chamond",
+          "arrival": "Parc des Oiseaux Villars-les-Dombes",
+          "stage_type": "RR",
+          "distance": 195.8
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-7",
+          "stage_name": "La Bridoire → Grand Colombier",
+          "date": "2026-06-13",
+          "departure": "La Bridoire",
+          "arrival": "Grand Colombier",
+          "stage_type": "RR",
+          "distance": 133.6
+        },
+        {
+          "stage_url": "race/tour-auvergne-rhone-alpes/2026/stage-8",
+          "stage_name": "Beaufort → Plateau de Solaison - Brison",
+          "date": "2026-06-14",
+          "departure": "Beaufort",
+          "arrival": "Plateau de Solaison - Brison",
+          "stage_type": "RR",
+          "distance": 120.1
+        }
+      ]
+    },
+    {
+      "url": "race/tour-de-france/2026",
+      "name": "Tour de France",
+      "year": 2026,
+      "nationality": "FR",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-07-04",
+      "enddate": "2026-07-26",
+      "stages": [
+        {
+          "stage_url": "race/tour-de-france/2026/stage-1",
+          "date": "07-04",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-2",
+          "date": "07-05",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-3",
+          "date": "07-06",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-4",
+          "date": "07-07",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-5",
+          "date": "07-08",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-6",
+          "date": "07-09",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-7",
+          "date": "07-10",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-8",
+          "date": "07-11",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-9",
+          "date": "07-12",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-10",
+          "date": "07-14",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-11",
+          "date": "07-15",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-12",
+          "date": "07-16",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-13",
+          "date": "07-17",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-14",
+          "date": "07-18",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-15",
+          "date": "07-19",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-16",
+          "date": "07-21",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-17",
+          "date": "07-22",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-18",
+          "date": "07-23",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-19",
+          "date": "07-24",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-20",
+          "date": "07-25",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-france/2026/stage-21",
+          "date": "07-26",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/tour-de-france/2026",
+      "stage_details": []
+    },
+    {
+      "url": "race/tour-de-pologne/2026",
+      "name": "Tour de Pologne",
+      "year": 2026,
+      "nationality": "PL",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-08-03",
+      "enddate": "2026-08-09",
+      "stages": [
+        {
+          "stage_url": "race/tour-de-pologne/2026/stage-1",
+          "date": "08-03",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-pologne/2026/stage-2",
+          "date": "08-04",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-pologne/2026/stage-3",
+          "date": "08-05",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-pologne/2026/stage-4",
+          "date": "08-06",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-pologne/2026/stage-5",
+          "date": "08-07",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-pologne/2026/stage-6",
+          "date": "08-08",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-pologne/2026/stage-7",
+          "date": "08-09",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/tour-de-pologne/2026",
+      "stage_details": []
+    },
+    {
+      "url": "race/tour-de-romandie/2026",
+      "name": "Tour de Romandie",
+      "year": 2026,
+      "nationality": "CH",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-04-28",
+      "enddate": "2026-05-03",
+      "stages": [
+        {
+          "stage_url": "race/tour-de-romandie/2026/prologue",
+          "date": "04-28",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-romandie/2026/stage-1",
+          "date": "04-29",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-romandie/2026/stage-2",
+          "date": "04-30",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-romandie/2026/stage-3",
+          "date": "05-01",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-romandie/2026/stage-4",
+          "date": "05-02",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-romandie/2026/stage-5",
+          "date": "05-03",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/tour-de-romandie/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/tour-de-romandie/2026/prologue",
+          "stage_name": "Villars-sur-Glâne → Villars-sur-Glâne",
+          "date": "2026-04-28",
+          "departure": "Villars-sur-Glâne",
+          "arrival": "Villars-sur-Glâne",
+          "stage_type": "RR",
+          "distance": 3.2
+        },
+        {
+          "stage_url": "race/tour-de-romandie/2026/stage-1",
+          "stage_name": "Martigny → Martigny",
+          "date": "2026-04-29",
+          "departure": "Martigny",
+          "arrival": "Martigny",
+          "stage_type": "RR",
+          "distance": 171.2
+        },
+        {
+          "stage_url": "race/tour-de-romandie/2026/stage-2",
+          "stage_name": "Rue → Vucherens",
+          "date": "2026-04-30",
+          "departure": "Rue",
+          "arrival": "Vucherens",
+          "stage_type": "RR",
+          "distance": 173.1
+        },
+        {
+          "stage_url": "race/tour-de-romandie/2026/stage-3",
+          "stage_name": "Orbe → Orbe",
+          "date": "2026-05-01",
+          "departure": "Orbe",
+          "arrival": "Orbe",
+          "stage_type": "RR",
+          "distance": 176.6
+        },
+        {
+          "stage_url": "race/tour-de-romandie/2026/stage-4",
+          "stage_name": "Broc → Charmey",
+          "date": "2026-05-02",
+          "departure": "Broc",
+          "arrival": "Charmey",
+          "stage_type": "RR",
+          "distance": 149.6
+        },
+        {
+          "stage_url": "race/tour-de-romandie/2026/stage-5",
+          "stage_name": "Lucens → Leysin",
+          "date": "2026-05-03",
+          "departure": "Lucens",
+          "arrival": "Leysin",
+          "stage_type": "RR",
+          "distance": 178.2
+        }
+      ]
+    },
+    {
+      "url": "race/tour-de-suisse/2026",
+      "name": "Tour de Suisse",
+      "year": 2026,
+      "nationality": "CH",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-06-17",
+      "enddate": "2026-06-21",
+      "stages": [
+        {
+          "stage_url": "race/tour-de-suisse/2026/stage-1",
+          "date": "06-17",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-suisse/2026/stage-2",
+          "date": "06-18",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-suisse/2026/stage-3",
+          "date": "06-19",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-suisse/2026/stage-4",
+          "date": "06-20",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-de-suisse/2026/stage-5",
+          "date": "06-21",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/tour-de-suisse/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/tour-de-suisse/2026/stage-1",
+          "stage_name": "Sondrio → Sondrio",
+          "date": "2026-06-17",
+          "departure": "Sondrio",
+          "arrival": "Sondrio",
+          "stage_type": "RR",
+          "distance": 144.0
+        },
+        {
+          "stage_url": "race/tour-de-suisse/2026/stage-2",
+          "stage_name": "Locarno → Locarno",
+          "date": "2026-06-18",
+          "departure": "Locarno",
+          "arrival": "Locarno",
+          "stage_type": "RR",
+          "distance": 157.7
+        },
+        {
+          "stage_url": "race/tour-de-suisse/2026/stage-3",
+          "stage_name": "Bad Ragaz → Bad Ragaz",
+          "date": "2026-06-19",
+          "departure": "Bad Ragaz",
+          "arrival": "Bad Ragaz",
+          "stage_type": "RR",
+          "distance": 157.4
+        },
+        {
+          "stage_url": "race/tour-de-suisse/2026/stage-4",
+          "stage_name": "Aarburg → Aarburg",
+          "date": "2026-06-20",
+          "departure": "Aarburg",
+          "arrival": "Aarburg",
+          "stage_type": "ITT",
+          "distance": 23.7
+        },
+        {
+          "stage_url": "race/tour-de-suisse/2026/stage-5",
+          "stage_name": "Villars-sur-Ollon → Villars-sur-Ollon",
+          "date": "2026-06-21",
+          "departure": "Villars-sur-Ollon",
+          "arrival": "Villars-sur-Ollon",
+          "stage_type": "RR",
+          "distance": 150.7
+        }
+      ]
+    },
+    {
+      "url": "race/tour-down-under/2026",
+      "name": "Tour Down Under",
+      "year": 2026,
+      "nationality": "AU",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-01-20",
+      "enddate": "2026-01-25",
+      "stages": [
+        {
+          "stage_url": "race/tour-down-under/2026/prologue",
+          "date": "01-20",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-down-under/2026/stage-1",
+          "date": "01-21",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-down-under/2026/stage-2",
+          "date": "01-22",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-down-under/2026/stage-3",
+          "date": "01-23",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-down-under/2026/stage-4",
+          "date": "01-24",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-down-under/2026/stage-5",
+          "date": "01-25",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/tour-down-under/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/tour-down-under/2026/prologue",
+          "stage_name": "Adelaide → Adelaide",
+          "date": "2026-01-20",
+          "departure": "Adelaide",
+          "arrival": "Adelaide",
+          "stage_type": "RR",
+          "distance": 3.6
+        },
+        {
+          "stage_url": "race/tour-down-under/2026/stage-1",
+          "stage_name": "Tanunda → Tanunda",
+          "date": "2026-01-21",
+          "departure": "Tanunda",
+          "arrival": "Tanunda",
+          "stage_type": "RR",
+          "distance": 120.6
+        },
+        {
+          "stage_url": "race/tour-down-under/2026/stage-2",
+          "stage_name": "Norwood → Uraidla",
+          "date": "2026-01-22",
+          "departure": "Norwood",
+          "arrival": "Uraidla",
+          "stage_type": "RR",
+          "distance": 148.1
+        },
+        {
+          "stage_url": "race/tour-down-under/2026/stage-3",
+          "stage_name": "Henley Beach → Nairne",
+          "date": "2026-01-23",
+          "departure": "Henley Beach",
+          "arrival": "Nairne",
+          "stage_type": "RR",
+          "distance": 140.8
+        },
+        {
+          "stage_url": "race/tour-down-under/2026/stage-4",
+          "stage_name": "Brighton → Willunga",
+          "date": "2026-01-24",
+          "departure": "Brighton",
+          "arrival": "Willunga",
+          "stage_type": "RR",
+          "distance": 130.8
+        },
+        {
+          "stage_url": "race/tour-down-under/2026/stage-5",
+          "stage_name": "Stirling → Stirling",
+          "date": "2026-01-25",
+          "departure": "Stirling",
+          "arrival": "Stirling",
+          "stage_type": "RR",
+          "distance": 169.8
+        }
+      ]
+    },
+    {
+      "url": "race/tour-of-guangxi/2026",
+      "name": "Tour of Guangxi",
+      "year": 2026,
+      "nationality": "CN",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-10-13",
+      "enddate": "2026-10-18",
+      "stages": [
+        {
+          "stage_url": "race/tour-of-guangxi/2026/stage-1",
+          "date": "10-13",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-of-guangxi/2026/stage-2",
+          "date": "10-14",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-of-guangxi/2026/stage-3",
+          "date": "10-15",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-of-guangxi/2026/stage-4",
+          "date": "10-16",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-of-guangxi/2026/stage-5",
+          "date": "10-17",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/tour-of-guangxi/2026/stage-6",
+          "date": "10-18",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/tour-of-guangxi/2026",
+      "stage_details": []
+    },
+    {
+      "url": "race/uae-tour/2026",
+      "name": "UAE Tour",
+      "year": 2026,
+      "nationality": "AE",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-02-16",
+      "enddate": "2026-02-22",
+      "stages": [
+        {
+          "stage_url": "race/uae-tour/2026/stage-1",
+          "date": "02-16",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/uae-tour/2026/stage-2",
+          "date": "02-17",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/uae-tour/2026/stage-3",
+          "date": "02-18",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/uae-tour/2026/stage-4",
+          "date": "02-19",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/uae-tour/2026/stage-5",
+          "date": "02-20",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/uae-tour/2026/stage-6",
+          "date": "02-21",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/uae-tour/2026/stage-7",
+          "date": "02-22",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/uae-tour/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/uae-tour/2026/stage-1",
+          "stage_name": "Madinat Zayed Majlis → Liwa Palace",
+          "date": "2026-02-16",
+          "departure": "Madinat Zayed Majlis",
+          "arrival": "Liwa Palace",
+          "stage_type": "RR",
+          "distance": 118.0
+        },
+        {
+          "stage_url": "race/uae-tour/2026/stage-2",
+          "stage_name": "Hudayriyat Island → Hudayriyat Island",
+          "date": "2026-02-17",
+          "departure": "Hudayriyat Island",
+          "arrival": "Hudayriyat Island",
+          "stage_type": "ITT",
+          "distance": 12.2
+        },
+        {
+          "stage_url": "race/uae-tour/2026/stage-3",
+          "stage_name": "Umm al Quwain → Jebel Mobrah",
+          "date": "2026-02-18",
+          "departure": "Umm al Quwain",
+          "arrival": "Jebel Mobrah",
+          "stage_type": "RR",
+          "distance": 183.0
+        },
+        {
+          "stage_url": "race/uae-tour/2026/stage-4",
+          "stage_name": "Fujairah → Fujairah",
+          "date": "2026-02-19",
+          "departure": "Fujairah",
+          "arrival": "Fujairah",
+          "stage_type": "RR",
+          "distance": 182.0
+        },
+        {
+          "stage_url": "race/uae-tour/2026/stage-5",
+          "stage_name": "Dubai Al Mamzar Park → Hamdan Bin Mohammed Smart University",
+          "date": "2026-02-20",
+          "departure": "Dubai Al Mamzar Park",
+          "arrival": "Hamdan Bin Mohammed Smart University",
+          "stage_type": "RR",
+          "distance": 168.0
+        },
+        {
+          "stage_url": "race/uae-tour/2026/stage-6",
+          "stage_name": "Al Ain Museum → Jebel Hafeet",
+          "date": "2026-02-21",
+          "departure": "Al Ain Museum",
+          "arrival": "Jebel Hafeet",
+          "stage_type": "RR",
+          "distance": 168.0
+        },
+        {
+          "stage_url": "race/uae-tour/2026/stage-7",
+          "stage_name": "Zayed National Museum → Abu Dhabi Breakwater",
+          "date": "2026-02-22",
+          "departure": "Zayed National Museum",
+          "arrival": "Abu Dhabi Breakwater",
+          "stage_type": "RR",
+          "distance": 149.0
+        }
+      ]
+    },
+    {
+      "url": "race/volta-a-catalunya/2026",
+      "name": "Volta a Catalunya",
+      "year": 2026,
+      "nationality": "ES",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-03-23",
+      "enddate": "2026-03-29",
+      "stages": [
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-1",
+          "date": "03-23",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-2",
+          "date": "03-24",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-3",
+          "date": "03-25",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-4",
+          "date": "03-26",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-5",
+          "date": "03-27",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-6",
+          "date": "03-28",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-7",
+          "date": "03-29",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/volta-a-catalunya/2026",
+      "stage_details": [
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-1",
+          "stage_name": "Sant Feliu de Guíxols → Sant Feliu de Guíxols",
+          "date": "2026-03-23",
+          "departure": "Sant Feliu de Guíxols",
+          "arrival": "Sant Feliu de Guíxols",
+          "stage_type": "RR",
+          "distance": 172.8
+        },
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-2",
+          "stage_name": "Figueres → Banyoles",
+          "date": "2026-03-24",
+          "departure": "Figueres",
+          "arrival": "Banyoles",
+          "stage_type": "RR",
+          "distance": 167.4
+        },
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-3",
+          "stage_name": "Mont-roig del Camp → Vila-seca",
+          "date": "2026-03-25",
+          "departure": "Mont-roig del Camp",
+          "arrival": "Vila-seca",
+          "stage_type": "RR",
+          "distance": 159.4
+        },
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-4",
+          "stage_name": "Mataró → Camprodón",
+          "date": "2026-03-26",
+          "departure": "Mataró",
+          "arrival": "Camprodón",
+          "stage_type": "RR",
+          "distance": 151.0
+        },
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-5",
+          "stage_name": "La Seu d'Urgell → La Molina/Coll de Pal",
+          "date": "2026-03-27",
+          "departure": "La Seu d'Urgell",
+          "arrival": "La Molina/Coll de Pal",
+          "stage_type": "RR",
+          "distance": 153.1
+        },
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-6",
+          "stage_name": "Berga → Queralt",
+          "date": "2026-03-28",
+          "departure": "Berga",
+          "arrival": "Queralt",
+          "stage_type": "RR",
+          "distance": 158.2
+        },
+        {
+          "stage_url": "race/volta-a-catalunya/2026/stage-7",
+          "stage_name": "Barcelona → Barcelona",
+          "date": "2026-03-29",
+          "departure": "Barcelona",
+          "arrival": "Barcelona",
+          "stage_type": "RR",
+          "distance": 95.1
+        }
+      ]
+    },
+    {
+      "url": "race/vuelta-a-espana/2026",
+      "name": "Vuelta a España",
+      "year": 2026,
+      "nationality": "ES",
+      "is_one_day_race": false,
+      "category": "Men Elite",
+      "uci_tour": "2.UWT",
+      "startdate": "2026-08-22",
+      "enddate": "2026-09-13",
+      "stages": [
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-1",
+          "date": "08-22",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-2",
+          "date": "08-23",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-3",
+          "date": "08-24",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-4",
+          "date": "08-25",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-5",
+          "date": "08-26",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-6",
+          "date": "08-27",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-7",
+          "date": "08-28",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-8",
+          "date": "08-29",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-9",
+          "date": "08-30",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-10",
+          "date": "09-01",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-11",
+          "date": "09-02",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-12",
+          "date": "09-03",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-13",
+          "date": "09-04",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-14",
+          "date": "09-05",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-15",
+          "date": "09-06",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-16",
+          "date": "09-08",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-17",
+          "date": "09-09",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-18",
+          "date": "09-10",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-19",
+          "date": "09-11",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-20",
+          "date": "09-12",
+          "departure": null,
+          "arrival": null
+        },
+        {
+          "stage_url": "race/vuelta-a-espana/2026/stage-21",
+          "date": "09-13",
+          "departure": null,
+          "arrival": null
+        }
+      ],
+      "pcs_link": "https://www.procyclingstats.com/race/vuelta-a-espana/2026",
+      "stage_details": []
+    },
+    {
+      "url": "race/world-championship/2026",
+      "name": "World Championships ME - Road Race",
+      "year": 2026,
+      "nationality": "CA",
+      "is_one_day_race": true,
+      "category": "Men Elite",
+      "uci_tour": "WC",
+      "startdate": "2026-09-27",
+      "enddate": "2026-09-27",
+      "stages": [],
+      "pcs_link": "https://www.procyclingstats.com/race/world-championship/2026",
+      "stage_details": []
+    }
+  ]
+}
