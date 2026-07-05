@@ -1,231 +1,275 @@
 #!/usr/bin/env python3
-"""Generate 2026 Tour de France ICS with China broadcast times."""
+"""Generate 2026 Tour de France ICS with rich descriptions and China broadcast times."""
 
 import argparse
-import uuid
+import re
 from datetime import datetime
 
 import arrow
 from ics import Calendar, Event
 
 TZ = "Asia/Shanghai"
+PRODID = "cycling-ics TDF2026 generator"
 
 # 直播时间来源：观骑世界 / 中国体育 2026环法官方直播日程表
-# route 使用英文地名，与 TDF2025.ics 的 DESCRIPTION 格式一致
-STAGES = [
+# description 保留完整赛段信息；broadcast_cn 用于生成日历精确时间
+EVENTS = [
     {
-        "presentation": True,
         "date": "2026-07-03",
-        "route": "Barcelona",
+        "summary": "环法自行车赛 Tour de France (2.UWT) - 车队亮相",
+        "description": (
+            "车队亮相 | 观骑世界/中国体育直播：00:30-02:00(北京时间) | 解说：李陶 | "
+            "2026环法车队亮相仪式，巴塞罗那。"
+        ),
         "broadcast_cn": ("00:30", "02:00"),
-        "commentators": "李陶",
+        "uid": "e8a09a2c-8488-4dd8-ad2d-bae10e952100",
     },
     {
-        "num": 1,
         "date": "2026-07-04",
-        "route": "Barcelona - Barcelona",
-        "type": "团队计时",
-        "distance": 20,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 1 (TTT)",
+        "description": (
+            "巴塞罗那 - 巴塞罗那 | 团队计时赛(TTT)(19.6KM) | 当地开赛：17:05(CEST) | "
+            "预计完赛：19:16(CEST) | 观骑世界/中国体育直播：22:55-1:45(北京时间) | 解说：李陶、计成 | "
+            "巴塞罗那傍晚发车的团队计时赛，末段含蒙特惠奇爬坡与奥林匹克馆上坡冲刺，获胜者穿上黄衫。"
+        ),
         "broadcast_cn": ("22:55", "1:45"),
-        "commentators": "李陶、计成",
+        "uid": "106492b3-c306-4207-8636-a4e7ae30a7e0",
     },
     {
-        "num": 2,
         "date": "2026-07-05",
-        "route": "Tarragona - Barcelona",
-        "type": "丘陵",
-        "distance": 169,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 2",
+        "description": (
+            "塔拉戈纳 - 巴塞罗那 | 丘陵(168.5KM) | 当地开赛：13:45(CEST) | "
+            "预计完赛：17:26(CEST) | 观骑世界/中国体育直播：19:35-0:10(北京时间) | 解说：李陶、计成 | "
+            "沿海转内陆，终点巴塞罗那绕圈含蒙特惠奇(1.6km@9.3%)上坡冲刺，波加查或在此发动进攻。"
+        ),
         "broadcast_cn": ("19:35", "0:10"),
-        "commentators": "李陶、计成",
+        "uid": "47f21c58-2e0f-4c65-b476-57bcc7a4689a",
     },
     {
-        "num": 3,
         "date": "2026-07-06",
-        "route": "Granollers - Les Angles",
-        "type": "山地",
-        "distance": 196,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 3",
+        "description": (
+            "格拉诺列尔斯 - 莱桑格 | 山地(195.9KM) | 当地开赛：12:10(CEST) | "
+            "预计完赛：16:54(CEST) | 观骑世界/中国体育直播：18:00-23:40(北京时间) | 解说：李陶、计成、萧深 | "
+            "首段真正山地赛，深入比利牛斯，一级爬坡距终点70km，适合远程进攻或突围争单站。"
+        ),
         "broadcast_cn": ("18:00", "23:40"),
-        "commentators": "李陶、计成、萧深",
+        "uid": "b0a233ac-2427-4405-94c0-aa095b47a65c",
     },
     {
-        "num": 4,
         "date": "2026-07-07",
-        "route": "Carcassonne - Foix",
-        "type": "丘陵",
-        "distance": 182,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 4",
+        "description": (
+            "卡尔卡松 - 福瓦 | 丘陵(181.9KM) | 当地开赛：13:10(CEST) | "
+            "预计完赛：17:23(CEST) | 观骑世界/中国体育直播：19:00-0:05(北京时间) | 解说：李陶、计成 | "
+            "四个爬坡集中在赛段中段，最后35km起伏不大，突围车手有望争胜。"
+        ),
         "broadcast_cn": ("19:00", "0:05"),
-        "commentators": "李陶、计成",
+        "uid": "9f1f5ff0-5294-4cd9-b3be-b9b902753f2d",
     },
     {
-        "num": 5,
         "date": "2026-07-08",
-        "route": "Lannemezan - Pau",
-        "type": "平路",
-        "distance": 158,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 5",
+        "description": (
+            "拉内默藏 - 波城 | 平路(158.3KM) | 当地开赛：14:05(CEST) | "
+            "预计完赛：17:37(CEST) | 观骑世界/中国体育直播：19:55-0:15(北京时间) | 解说：李陶、计成 | "
+            "今年首个平路冲刺赛段，冲刺积分最高70分，波城是环法到访次数最多的非巴黎城市。"
+        ),
         "broadcast_cn": ("19:55", "0:15"),
-        "commentators": "李陶、计成",
+        "uid": "f1c5b731-6c91-42f5-972e-47a920c18714",
     },
     {
-        "num": 6,
         "date": "2026-07-09",
-        "route": "Pau - Gavarnie-Gèdre",
-        "type": "山地",
-        "distance": 186,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 6",
+        "description": (
+            "波城 - 加瓦尔尼-热德尔 | 山地(186.2KM) | 当地开赛：12:25(CEST) | "
+            "预计完赛：17:29(CEST) | 观骑世界/中国体育直播：18:15-0:05(北京时间) | 解说：李陶、计成、陈子昊 | "
+            "比利牛斯收官战，阿斯潘+图尔马莱组合，山顶终点加瓦尔尼，第一周最关键赛段之一。"
+        ),
         "broadcast_cn": ("18:15", "0:05"),
-        "commentators": "李陶、计成、陈子昊",
+        "uid": "eeaf85f1-5163-4819-96a9-5000b400ce68",
     },
     {
-        "num": 7,
         "date": "2026-07-10",
-        "route": "Hagetmau - Bordeaux",
-        "type": "平路",
-        "distance": 175,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 7",
+        "description": (
+            "阿热莫 - 波尔多 | 平路(175.1KM) | 当地开赛：13:15(CEST) | "
+            "预计完赛：17:13(CEST) | 观骑世界/中国体育直播：19:05-23:55(北京时间) | 解说：李陶、陈子昊 | "
+            "较平坦的平路赛段，冲刺积分70分，终点拱门后有三个直角弯考验冲刺火车。"
+        ),
         "broadcast_cn": ("19:05", "23:55"),
-        "commentators": "李陶、陈子昊",
+        "uid": "346838b9-74d7-4820-a6e3-13b550894dd8",
     },
     {
-        "num": 8,
         "date": "2026-07-11",
-        "route": "Périgueux - Bergerac",
-        "type": "平路",
-        "distance": 180,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 8",
+        "description": (
+            "佩里格 - 贝尔热拉克 | 平路(180.4KM) | 当地开赛：13:15(CEST) | "
+            "预计完赛：17:20(CEST) | 观骑世界/中国体育直播：19:00-0:00(北京时间) | 解说：李陶、陈子昊 | "
+            "周末冲刺机会，终点设置复杂含急弯与转盘，对冲刺车队卡位要求很高。"
+        ),
         "broadcast_cn": ("19:00", "0:00"),
-        "commentators": "李陶、陈子昊",
+        "uid": "e481971e-ff58-4002-9fad-79ebf1a13e23",
     },
     {
-        "num": 9,
         "date": "2026-07-12",
-        "route": "Malemort - Ussel",
-        "type": "丘陵",
-        "distance": 186,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 9",
+        "description": (
+            "马勒莫尔 - 于塞尔 | 丘陵(185.5KM) | 当地开赛：13:35(CEST) | "
+            "预计完赛：17:47(CEST) | 观骑世界/中国体育直播：19:20-0:30(北京时间) | 解说：李陶、陈子昊 | "
+            "起伏不断的突围日，开局即爬坡，乡村窄路适合兔子，之后迎来第一个休息日。"
+        ),
         "broadcast_cn": ("19:20", "0:30"),
-        "commentators": "李陶、陈子昊",
+        "uid": "a7448a20-22f3-4834-b9e8-e10da9f670a2",
     },
-    {"num": None, "date": "2026-07-13", "rest": True},
     {
-        "num": 10,
+        "date": "2026-07-13",
+        "summary": "环法自行车赛 Tour de France (2.UWT) - 休息日 Rest Day",
+        "description": "休息日 | 无赛段 | 观骑世界无直播",
+        "rest": True,
+        "uid": "611ded09-5f3b-4acf-a10e-242e768855e3",
+    },
+    {
         "date": "2026-07-14",
-        "route": "Aurillac - Le Lioran",
-        "type": "山地",
-        "distance": 167,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 10",
+        "description": (
+            "欧里亚克 - 勒里奥兰 | 山地(166.6KM) | 当地开赛：13:10(CEST) | "
+            "预计完赛：17:12(CEST) | 观骑世界/中国体育直播：19:00-0:00(北京时间) | 解说：云苏华、陈子昊 | "
+            "法国国庆日山地赛，后半程连续爬坡佩罗尔与佩尔蒂，2024年波加查与温格高在此激战。"
+        ),
         "broadcast_cn": ("19:00", "0:00"),
-        "commentators": "云苏华、陈子昊",
+        "uid": "61378d8d-f4e2-498a-ae86-e2aea061b7ef",
     },
     {
-        "num": 11,
         "date": "2026-07-15",
-        "route": "Vichy - Nevers",
-        "type": "平路",
-        "distance": 161,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 11",
+        "description": (
+            "维希 - 讷韦尔 | 平路(161.3KM) | 当地开赛：13:50(CEST) | "
+            "预计完赛：17:31(CEST) | 观骑世界/中国体育直播：19:40-0:10(北京时间) | 解说：李陶、云苏华 | "
+            "理论平路冲刺日，侧风强时可能变成陷阱赛段，冲刺积分70分。"
+        ),
         "broadcast_cn": ("19:40", "0:10"),
-        "commentators": "李陶、云苏华",
+        "uid": "ec304cda-ad8a-47f9-946f-a0f3b4218127",
     },
     {
-        "num": 12,
         "date": "2026-07-16",
-        "route": "Magny-Cours - Chalon-sur-Saône",
-        "type": "平路",
-        "distance": 179,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 12",
+        "description": (
+            "马尼库尔赛道 - 索恩河畔沙隆 | 平路(179.1KM) | 当地开赛：13:30(CEST) | "
+            "预计完赛：17:29(CEST) | 观骑世界/中国体育直播：19:20-0:15(北京时间) | 解说：李陶、云苏华 | "
+            "从F1马尼库尔赛道发车，纯冲刺车手在艰难赛段到来前的最后机会，冲刺积分70分。"
+        ),
         "broadcast_cn": ("19:20", "0:15"),
-        "commentators": "李陶、云苏华",
+        "uid": "29381a84-acfa-4a1d-8ffc-8df4dfe4046b",
     },
     {
-        "num": 13,
         "date": "2026-07-17",
-        "route": "Dole - Belfort",
-        "type": "丘陵",
-        "distance": 206,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 13",
+        "description": (
+            "多勒 - 贝尔福 | 丘陵(205.8KM) | 当地开赛：13:00(CEST) | "
+            "预计完赛：17:46(CEST) | 观骑世界/中国体育直播：18:50-0:30(北京时间) | 解说：李陶、云苏华 | "
+            "全年最长赛段205.8km，途经环法首座大山阿尔萨斯气球山，突围争胜日。"
+        ),
         "broadcast_cn": ("18:50", "0:30"),
-        "commentators": "李陶、云苏华",
+        "uid": "38f18650-aa19-4aea-a99c-4935c226d6b8",
     },
     {
-        "num": 14,
         "date": "2026-07-18",
-        "route": "Mulhouse - Le Markstein",
-        "type": "山地",
-        "distance": 155,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 14",
+        "description": (
+            "米卢斯 - 勒马克斯坦 | 山地(155.3KM) | 当地开赛：13:10(CEST) | "
+            "预计完赛：17:24(CEST) | 观骑世界/中国体育直播：19:00-0:05(北京时间) | 解说：李陶、云苏华 | "
+            "孚日山区大战，全新哈格山口路线狭窄陡峭，坡顶距终点仅6km。"
+        ),
         "broadcast_cn": ("19:00", "0:05"),
-        "commentators": "李陶、云苏华",
+        "uid": "17052c83-80be-4c8e-bc8c-97d2e459e570",
     },
     {
-        "num": 15,
         "date": "2026-07-19",
-        "route": "Champagnole - Plateau de Solaison",
-        "type": "山地",
-        "distance": 184,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 15",
+        "description": (
+            "尚帕尼奥勒 - 索莱松高原 | 山地(183.9KM) | 当地开赛：13:20(CEST) | "
+            "预计完赛：17:18(CEST) | 观骑世界/中国体育直播：19:00-0:25(北京时间) | 解说：李陶、云苏华 | "
+            "首个HC级山顶终点，索莱松高原11.3km@9%，萨莱夫山前置爬坡同样凶险。"
+        ),
         "broadcast_cn": ("19:00", "0:25"),
-        "commentators": "李陶、云苏华",
+        "uid": "ebc9df42-19d2-4441-8e66-368ca4eeab25",
     },
-    {"num": None, "date": "2026-07-20", "rest": True},
     {
-        "num": 16,
+        "date": "2026-07-20",
+        "summary": "环法自行车赛 Tour de France (2.UWT) - 休息日 Rest Day",
+        "description": "休息日 | 无赛段 | 观骑世界无直播",
+        "rest": True,
+        "uid": "9bf0628b-068b-49fd-9028-41f4751788e6",
+    },
+    {
         "date": "2026-07-21",
-        "route": "Evian-les-Bains - Thonon-les-Bains",
-        "type": "个人计时",
-        "distance": 26,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 16 (ITT)",
+        "description": (
+            "埃维昂莱班 - 托农莱班 | 个人计时赛(ITT)(26.1KM) | 当地开赛：13:00(CEST) | "
+            "预计完赛：17:50(CEST) | 观骑世界/中国体育直播：18:50-0:20(北京时间) | 解说：云苏华、萧深 | "
+            "沿日内瓦湖26.1km计时赛，含缓坡、技术性下坡与急弯，GC格局关键转折点。"
+        ),
         "broadcast_cn": ("18:50", "0:20"),
-        "commentators": "云苏华、萧深",
+        "uid": "6f3ebee9-6b5e-489e-af4d-b5b50c83075ae",
     },
     {
-        "num": 17,
         "date": "2026-07-22",
-        "route": "Chambery - Voiron",
-        "type": "平路",
-        "distance": 175,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 17",
+        "description": (
+            "尚贝里 - 瓦龙 | 平路(174.7KM) | 当地开赛：13:20(CEST) | "
+            "预计完赛：17:18(CEST) | 观骑世界/中国体育直播：19:10-0:00(北京时间) | 解说：李陶、萧深 | "
+            "名义平路实则2200m爬升，开局四个爬坡，高山决战前的喘息之机。"
+        ),
         "broadcast_cn": ("19:10", "0:00"),
-        "commentators": "李陶、萧深",
+        "uid": "2c0c2230-ed26-40bc-b096-f35c150762e9",
     },
     {
-        "num": 18,
         "date": "2026-07-23",
-        "route": "Voiron - Orcières-Merlette",
-        "type": "山地",
-        "distance": 185,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 18",
+        "description": (
+            "瓦龙 - 奥尔西耶尔-梅莱特 | 山地(185.2KM) | 当地开赛：12:35(CEST) | "
+            "预计完赛：17:12(CEST) | 观骑世界/中国体育直播：18:20-0:00(北京时间) | 解说：李陶、萧深 | "
+            "阿尔卑斯三连战首战，山顶终点奥尔西耶尔7km@6.5%，GC或保守、突围有机会。"
+        ),
         "broadcast_cn": ("18:20", "0:00"),
-        "commentators": "李陶、萧深",
+        "uid": "e2e6832e-3845-4e8a-88e9-ad8f9ae19049",
     },
     {
-        "num": 19,
         "date": "2026-07-24",
-        "route": "Gap - Alpe d'Huez",
-        "type": "山地",
-        "distance": 128,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 19",
+        "description": (
+            "加普 - 阿尔普迪埃 | 山地(127.9KM) | 当地开赛：14:00(CEST) | "
+            "预计完赛：17:24(CEST) | 观骑世界/中国体育直播：19:50-0:15(北京时间) | 解说：李陶、萧深 | "
+            "环法史上首次连续两天阿尔普迪埃，128km迷你高山赛，HC级山顶终点。"
+        ),
         "broadcast_cn": ("19:50", "0:15"),
-        "commentators": "李陶、萧深",
+        "uid": "98368d38-9e25-4f9c-a07c-561f28a80f29",
     },
     {
-        "num": 20,
         "date": "2026-07-25",
-        "route": "Le Bourg d'Oisans - Alpe d'Huez",
-        "type": "山地",
-        "distance": 171,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 20",
+        "description": (
+            "勒布尔杜瓦桑 - 阿尔普迪埃 | 山地(170.9KM) | 当地开赛：11:20(CEST) | "
+            "预计完赛：16:11(CEST) | 观骑世界/中国体育直播：17:10-23:00(北京时间) | 解说：李陶、萧深 | "
+            "皇后赛段，5600m+爬升，铁十字+加利比耶+萨雷讷，GC终极决战。"
+        ),
         "broadcast_cn": ("17:10", "23:00"),
-        "commentators": "李陶、萧深",
+        "uid": "83f2e375-6f81-4d03-bc63-5afa3bc4cd90",
     },
     {
-        "num": 21,
         "date": "2026-07-26",
-        "route": "Thoiry - Paris Champs-Élysées",
-        "type": "平路",
-        "distance": 130,
+        "summary": "环法自行车赛 Tour de France (2.UWT) - Stage 21",
+        "description": (
+            "图瓦里 - 巴黎香榭丽舍大街 | 平路(133.0KM) | 当地开赛：16:15(CEST) | "
+            "预计完赛：19:30(CEST) | 观骑世界/中国体育直播：22:05-2:25(北京时间) | 解说：李陶、萧深 | "
+            "传统巴黎收官，三次蒙马特高地绕圈后香街冲刺，为第113届环法画上句号。"
+        ),
         "broadcast_cn": ("22:05", "2:25"),
-        "commentators": "李陶、萧深",
+        "uid": "e82d5062-74f7-44bf-affd-8047fca74f1a",
     },
 ]
-
-
-def build_description(stage):
-    if stage.get("rest"):
-        return "休息日 | 无赛段 | 无解说"
-    cn_s, cn_f = stage["broadcast_cn"]
-    comm = stage["commentators"]
-    time_range = f"{cn_s}-{cn_f}"
-    if stage.get("presentation"):
-        return f"{stage['route']} | 车队亮相 | 解说员：{comm} | 解说时间：{time_range}"
-    route = stage["route"]
-    stype = stage["type"]
-    dist = stage["distance"]
-    return f"{route} | {stype}({dist}KM) | 解说员：{comm} | 解说时间：{time_range}"
 
 
 def parse_hm(time_str):
@@ -249,33 +293,20 @@ def broadcast_range(date_str, start_str, end_str):
     return begin.datetime, end.datetime
 
 
-def build_summary(stage):
-    if stage.get("presentation"):
-        return "环法自行车赛 Tour de France (2.UWT) - 车队亮相"
-    if stage.get("rest"):
-        return "环法自行车赛 Tour de France (2.UWT) - 休息日 Rest Day"
-    num = stage["num"]
-    if stage["type"] == "团队计时":
-        return f"环法自行车赛 Tour de France (2.UWT) - Stage {num} (TTT)"
-    if stage["type"] == "个人计时":
-        return f"环法自行车赛 Tour de France (2.UWT) - Stage {num} (ITT)"
-    return f"环法自行车赛 Tour de France (2.UWT) - Stage {num}"
-
-
-def make_event(stage, timed=True):
+def make_event(item, timed=True):
     event = Event()
-    event.name = build_summary(stage)
-    event.description = build_description(stage)
-    event.uid = str(uuid.uuid4())
+    event.name = item["summary"]
+    event.description = item["description"]
+    event.uid = item["uid"]
 
-    year, month, day = (int(x) for x in stage["date"].split("-"))
-    if stage.get("rest") or not timed:
+    year, month, day = (int(x) for x in item["date"].split("-"))
+    if item.get("rest") or not timed:
         event.begin = datetime(year, month, day)
         event.make_all_day()
         return event
 
-    start_str, end_str = stage["broadcast_cn"]
-    event.begin, event.end = broadcast_range(stage["date"], start_str, end_str)
+    start_str, end_str = item["broadcast_cn"]
+    event.begin, event.end = broadcast_range(item["date"], start_str, end_str)
     return event
 
 
@@ -284,7 +315,7 @@ def main():
     parser.add_argument(
         "--all-day",
         action="store_true",
-        help="Generate all-day events (legacy format)",
+        help="Generate all-day events instead of timed broadcast windows",
     )
     parser.add_argument(
         "-o",
@@ -295,15 +326,11 @@ def main():
     args = parser.parse_args()
 
     calendar = Calendar()
-    calendar.creator = "ics.py - http://git.io/lLljaA"
+    calendar.creator = PRODID
 
     timed = not args.all_day
-    events = [
-        make_event(stage, timed=timed)
-        for stage in sorted(STAGES, key=lambda s: s["date"])
-    ]
-    for event in events:
-        calendar.events.add(event)
+    for item in EVENTS:
+        calendar.events.add(make_event(item, timed=timed))
 
     with open(args.output, "w", encoding="utf-8") as f:
         f.writelines(calendar)
@@ -311,7 +338,7 @@ def main():
     mode = "timed (Asia/Shanghai broadcast)" if timed else "all-day"
     max_line = max(len(line.rstrip("\r\n")) for line in calendar)
     print(
-        f"Created {args.output} with {len(events)} events "
+        f"Created {args.output} with {len(EVENTS)} events "
         f"({mode}, max line {max_line} chars)"
     )
 
