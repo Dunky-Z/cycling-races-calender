@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-"""Generate 2026 Tour de France ICS compatible with TDF2025.ics format."""
+"""Generate 2026 Tour de France ICS with China broadcast times."""
 
-from datetime import datetime
-from ics import Calendar, Event
+import argparse
 import uuid
+from datetime import datetime
+
+import arrow
+from ics import Calendar, Event
+
+TZ = "Asia/Shanghai"
 
 # 直播时间来源：观骑世界 / 中国体育 2026环法官方直播日程表
 # route 使用英文地名，与 TDF2025.ics 的 DESCRIPTION 格式一致
@@ -223,6 +228,27 @@ def build_description(stage):
     return f"{route} | {stype}({dist}KM) | 解说员：{comm} | 解说时间：{time_range}"
 
 
+def parse_hm(time_str):
+    hour, minute = time_str.split(":")
+    return int(hour), int(minute)
+
+
+def broadcast_range(date_str, start_str, end_str):
+    """Return (begin, end) in Asia/Shanghai for a China broadcast window."""
+    year, month, day = (int(x) for x in date_str.split("-"))
+    start_h, start_m = parse_hm(start_str)
+    end_h, end_m = parse_hm(end_str)
+    start_minutes = start_h * 60 + start_m
+    end_minutes = end_h * 60 + end_m
+
+    begin = arrow.get(year, month, day, start_h, start_m, tzinfo=TZ)
+    if end_minutes <= start_minutes:
+        end = arrow.get(year, month, day, end_h, end_m, tzinfo=TZ).shift(days=1)
+    else:
+        end = arrow.get(year, month, day, end_h, end_m, tzinfo=TZ)
+    return begin.datetime, end.datetime
+
+
 def build_summary(stage):
     if stage.get("presentation"):
         return "环法自行车赛 Tour de France (2.UWT) - 车队亮相"
@@ -236,31 +262,58 @@ def build_summary(stage):
     return f"环法自行车赛 Tour de France (2.UWT) - Stage {num}"
 
 
-def make_event(stage):
+def make_event(stage, timed=True):
     event = Event()
     event.name = build_summary(stage)
     event.description = build_description(stage)
-    y, m, d = (int(x) for x in stage["date"].split("-"))
-    event.begin = datetime(y, m, d)
-    event.make_all_day()
     event.uid = str(uuid.uuid4())
+
+    year, month, day = (int(x) for x in stage["date"].split("-"))
+    if stage.get("rest") or not timed:
+        event.begin = datetime(year, month, day)
+        event.make_all_day()
+        return event
+
+    start_str, end_str = stage["broadcast_cn"]
+    event.begin, event.end = broadcast_range(stage["date"], start_str, end_str)
     return event
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Generate 2026 Tour de France ICS")
+    parser.add_argument(
+        "--all-day",
+        action="store_true",
+        help="Generate all-day events (legacy format)",
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        default="TDF2026.ics",
+        help="Output ICS file path",
+    )
+    args = parser.parse_args()
+
     calendar = Calendar()
     calendar.creator = "ics.py - http://git.io/lLljaA"
 
-    events = [make_event(stage) for stage in sorted(STAGES, key=lambda s: s["date"])]
+    timed = not args.all_day
+    events = [
+        make_event(stage, timed=timed)
+        for stage in sorted(STAGES, key=lambda s: s["date"])
+    ]
     for event in events:
         calendar.events.add(event)
 
-    output = "TDF2026.ics"
-    with open(output, "w", encoding="utf-8") as f:
+    with open(args.output, "w", encoding="utf-8") as f:
         f.writelines(calendar)
 
+    mode = "timed (Asia/Shanghai broadcast)" if timed else "all-day"
     max_line = max(len(line.rstrip("\r\n")) for line in calendar)
-    print(f"Created {output} with {len(events)} events (max line {max_line} chars)")
+    print(
+        f"Created {args.output} with {len(events)} events "
+        f"({mode}, max line {max_line} chars)"
+    )
 
 
 if __name__ == "__main__":
