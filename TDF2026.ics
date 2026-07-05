@@ -2,147 +2,147 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260703
-DESCRIPTION:巴塞罗那 | 车队亮相 | 解说员：李陶 | 解说时间：00:30-02:00
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - 车队亮相
-UID:a1b2c3d4-e5f6-4789-a012-202607030001
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260704
-DESCRIPTION:巴塞罗那 - 巴塞罗那 | 团队计时(20KM) | 解说员：李陶、计成 | 解说时间：22:55-1:45
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 1 (TTT)
-UID:a1b2c3d4-e5f6-4789-a012-202607040001
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260705
-DESCRIPTION:塔拉戈纳 - 巴塞罗那 | 丘陵(169KM) | 解说员：李陶、计成 | 解说时间：19:35-0:10
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 2
-UID:a1b2c3d4-e5f6-4789-a012-202607050002
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260706
-DESCRIPTION:格拉诺列尔斯 - 莱桑格 | 山地(196KM) | 解说员：李陶、计成、萧深 | 解说时间：18:00-23:40
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 3
-UID:a1b2c3d4-e5f6-4789-a012-202607060003
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260707
-DESCRIPTION:卡尔卡松 - 福瓦 | 丘陵(182KM) | 解说员：李陶、计成 | 解说时间：19:00-0:05
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 4
-UID:a1b2c3d4-e5f6-4789-a012-202607070004
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260708
-DESCRIPTION:拉内默藏 - 波城 | 平路(158KM) | 解说员：李陶、计成 | 解说时间：19:55-0:15
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 5
-UID:a1b2c3d4-e5f6-4789-a012-202607080005
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260709
-DESCRIPTION:波城 - 加瓦尔尼-热德尔 | 山地(186KM) | 解说员：李陶、计成、陈子昊 | 解说时间：18:15-0:05
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 6
-UID:a1b2c3d4-e5f6-4789-a012-202607090006
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260710
-DESCRIPTION:阿热莫 - 波尔多 | 平路(175KM) | 解说员：李陶、陈子昊 | 解说时间：19:05-23:55
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 7
-UID:a1b2c3d4-e5f6-4789-a012-202607100007
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260711
-DESCRIPTION:佩里格 - 贝尔热拉克 | 平路(180KM) | 解说员：李陶、陈子昊 | 解说时间：19:00-0:00
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 8
-UID:a1b2c3d4-e5f6-4789-a012-202607110008
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260712
-DESCRIPTION:马勒莫尔 - 于塞尔 | 丘陵(186KM) | 解说员：李陶、陈子昊 | 解说时间：19:20-0:30
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 9
-UID:a1b2c3d4-e5f6-4789-a012-202607120009
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260713
 DESCRIPTION:休息日 | 无赛段 | 无解说
 SUMMARY:环法自行车赛 Tour de France (2.UWT) - 休息日 Rest Day
-UID:a1b2c3d4-e5f6-4789-a012-202607130000
+UID:8aa29f88-4b2d-4c3e-ad0b-801054d63d58
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260714
-DESCRIPTION:欧里亚克 - 勒里奥兰 | 山地(167KM) | 解说员：云苏华、陈子昊 | 解说时间：19:00-0:00
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 10
-UID:a1b2c3d4-e5f6-4789-a012-202607140010
+DTSTART;VALUE=DATE:20260725
+DESCRIPTION:Le Bourg d'Oisans - Alpe d'Huez | 山地(171KM) | 解说员：李陶、萧深 | 解说时间：17:10-23:00
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 20
+UID:f32d90d3-489c-470c-80f4-df763d28a841
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260704
+DESCRIPTION:Barcelona - Barcelona | 团队计时(20KM) | 解说员：李陶、计成 | 解说时间：22:55-1:45
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 1 (TTT)
+UID:e261587c-01b9-4444-976d-61a9b6e46ba8
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260711
+DESCRIPTION:Périgueux - Bergerac | 平路(180KM) | 解说员：李陶、陈子昊 | 解说时间：19:00-0:00
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 8
+UID:3aa18839-61d2-43a6-b0f5-b434a33524ea
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260726
+DESCRIPTION:Thoiry - Paris Champs-Élysées | 平路(130KM) | 解说员：李陶、萧深 | 解说时间：22:05-2:25
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 21
+UID:077d16ef-e83c-4253-a490-298ece9e1144
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260706
+DESCRIPTION:Granollers - Les Angles | 山地(196KM) | 解说员：李陶、计成、萧深 | 解说时间：18:00-23:40
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 3
+UID:b7ef9405-6567-4d2d-b534-94d90e2827d9
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260708
+DESCRIPTION:Lannemezan - Pau | 平路(158KM) | 解说员：李陶、计成 | 解说时间：19:55-0:15
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 5
+UID:783f5b11-96d4-46f7-9b5f-6563793473ea
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260715
-DESCRIPTION:维希 - 讷韦尔 | 平路(161KM) | 解说员：李陶、云苏华 | 解说时间：19:40-0:10
+DESCRIPTION:Vichy - Nevers | 平路(161KM) | 解说员：李陶、云苏华 | 解说时间：19:40-0:10
 SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 11
-UID:a1b2c3d4-e5f6-4789-a012-202607150011
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260716
-DESCRIPTION:马尼库尔赛道 - 索恩河畔沙隆 | 平路(179KM) | 解说员：李陶、云苏华 | 解说时间：19:20-0:15
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 12
-UID:a1b2c3d4-e5f6-4789-a012-202607160012
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260717
-DESCRIPTION:多勒 - 贝尔福 | 丘陵(206KM) | 解说员：李陶、云苏华 | 解说时间：18:50-0:30
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 13
-UID:a1b2c3d4-e5f6-4789-a012-202607170013
+UID:f71657ea-71ab-456e-be68-31094a5e03c3
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260718
-DESCRIPTION:米卢斯 - 勒马克斯坦 | 山地(155KM) | 解说员：李陶、云苏华 | 解说时间：19:00-0:05
+DESCRIPTION:Mulhouse - Le Markstein | 山地(155KM) | 解说员：李陶、云苏华 | 解说时间：19:00-0:05
 SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 14
-UID:a1b2c3d4-e5f6-4789-a012-202607180014
+UID:d69ea8c3-4603-4a20-a6f9-d464941d4554
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260714
+DESCRIPTION:Aurillac - Le Lioran | 山地(167KM) | 解说员：云苏华、陈子昊 | 解说时间：19:00-0:00
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 10
+UID:1b7fc8fe-b667-4339-945a-69bc48b90e3e
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260703
+DESCRIPTION:Barcelona | 车队亮相 | 解说员：李陶 | 解说时间：00:30-02:00
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - 车队亮相
+UID:9226626c-c7a1-4324-b0d2-34ac638373d2
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260723
+DESCRIPTION:Voiron - Orcières-Merlette | 山地(185KM) | 解说员：李陶、萧深 | 解说时间：18:20-0:00
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 18
+UID:a4d2a388-d566-4d06-ad69-eb07b20e2591
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260709
+DESCRIPTION:Pau - Gavarnie-Gèdre | 山地(186KM) | 解说员：李陶、计成、陈子昊 | 解说时间：18:15-0:05
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 6
+UID:d01030a0-bbf8-4d8f-ae10-c12aa4bec46f
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260716
+DESCRIPTION:Magny-Cours - Chalon-sur-Saône | 平路(179KM) | 解说员：李陶、云苏华 | 解说时间：19:20-0:15
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 12
+UID:8ab3c730-b64f-419b-9efd-e06b6bd87122
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260712
+DESCRIPTION:Malemort - Ussel | 丘陵(186KM) | 解说员：李陶、陈子昊 | 解说时间：19:20-0:30
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 9
+UID:f764332d-cd39-44a9-b244-9c4036b38a52
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260719
-DESCRIPTION:尚帕尼奥勒 - 索莱松高原 | 山地(184KM) | 解说员：李陶、云苏华 | 解说时间：19:00-0:25
+DESCRIPTION:Champagnole - Plateau de Solaison | 山地(184KM) | 解说员：李陶、云苏华 | 解说时间：19:00-0:25
 SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 15
-UID:a1b2c3d4-e5f6-4789-a012-202607190015
+UID:1f597f6a-cd10-4829-9c5a-99ad1a308dad
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260724
+DESCRIPTION:Gap - Alpe d'Huez | 山地(128KM) | 解说员：李陶、萧深 | 解说时间：19:50-0:15
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 19
+UID:eb7c27a9-7bbc-4531-b57f-c688958a6cc7
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260721
+DESCRIPTION:Evian-les-Bains - Thonon-les-Bains | 个人计时(26KM) | 解说员：云苏华、萧深 | 解说时间：18:50-0:20
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 16 (ITT)
+UID:20b93c4d-4353-4e8a-8f21-f7c9545267cf
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260722
+DESCRIPTION:Chambery - Voiron | 平路(175KM) | 解说员：李陶、萧深 | 解说时间：19:10-0:00
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 17
+UID:0f23f1f5-f8f9-479b-8d1e-9fe2f01ee7c5
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260705
+DESCRIPTION:Tarragona - Barcelona | 丘陵(169KM) | 解说员：李陶、计成 | 解说时间：19:35-0:10
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 2
+UID:5a03cb8f-ae43-4480-aa03-41cc3e149742
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260717
+DESCRIPTION:Dole - Belfort | 丘陵(206KM) | 解说员：李陶、云苏华 | 解说时间：18:50-0:30
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 13
+UID:3e2e579a-5e08-428f-b1f2-9858fcfe747a
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260710
+DESCRIPTION:Hagetmau - Bordeaux | 平路(175KM) | 解说员：李陶、陈子昊 | 解说时间：19:05-23:55
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 7
+UID:1194e520-fe4e-448a-b03a-e01ac46dd7c5
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;VALUE=DATE:20260720
 DESCRIPTION:休息日 | 无赛段 | 无解说
 SUMMARY:环法自行车赛 Tour de France (2.UWT) - 休息日 Rest Day
-UID:a1b2c3d4-e5f6-4789-a012-202607200000
+UID:63b96a71-b5ef-41ff-8643-8e9d9a184692
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260721
-DESCRIPTION:埃维昂莱班 - 托农莱班 | 个人计时(26KM) | 解说员：云苏华、萧深 | 解说时间：18:50-0:20
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 16 (ITT)
-UID:a1b2c3d4-e5f6-4789-a012-202607210016
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260722
-DESCRIPTION:尚贝里 - 瓦龙 | 平路(175KM) | 解说员：李陶、萧深 | 解说时间：19:10-0:00
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 17
-UID:a1b2c3d4-e5f6-4789-a012-202607220017
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260723
-DESCRIPTION:瓦龙 - 奥尔西耶尔-梅莱特 | 山地(185KM) | 解说员：李陶、萧深 | 解说时间：18:20-0:00
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 18
-UID:a1b2c3d4-e5f6-4789-a012-202607230018
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260724
-DESCRIPTION:加普 - 阿尔普迪埃 | 山地(128KM) | 解说员：李陶、萧深 | 解说时间：19:50-0:15
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 19
-UID:a1b2c3d4-e5f6-4789-a012-202607240019
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260725
-DESCRIPTION:勒布尔杜瓦桑 - 阿尔普迪埃 | 山地(171KM) | 解说员：李陶、萧深 | 解说时间：17:10-23:00
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 20
-UID:a1b2c3d4-e5f6-4789-a012-202607250020
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:20260726
-DESCRIPTION:图瓦里 - 巴黎香榭丽舍大街 | 平路(130KM) | 解说员：李陶、萧深 | 解说时间：22:05-2:25
-SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 21
-UID:a1b2c3d4-e5f6-4789-a012-202607260021
+DTSTART;VALUE=DATE:20260707
+DESCRIPTION:Carcassonne - Foix | 丘陵(182KM) | 解说员：李陶、计成 | 解说时间：19:00-0:05
+SUMMARY:环法自行车赛 Tour de France (2.UWT) - Stage 4
+UID:31325a80-e082-4d37-8ffd-10d84c0fc9c5
 END:VEVENT
 END:VCALENDAR
